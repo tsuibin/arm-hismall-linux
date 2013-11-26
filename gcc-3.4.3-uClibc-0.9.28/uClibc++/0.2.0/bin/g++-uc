@@ -1,0 +1,24 @@
+#!/bin/bash
+
+WRAPPER_INCLUDEDIR="${WRAPPER_INCLUDEDIR:=-I/opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/uClibc++/0.2.0/include/}"
+WRAPPER_LIBDIR="${WRAPPER_LIBDIR:=-L/opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/uClibc++/0.2.0/lib/}"
+
+WRAPPER_OPTIONS=""
+WRAPPER_LIBS=" -L/opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/../lib/gcc/arm-hisi-linux/3.4.3/ -lc -lgcc"
+
+WRAPPER_INCLIB="Y"
+while [ -n "$1" ]
+do
+	WRAPPER_OPTIONS="$WRAPPER_OPTIONS $1"
+	if [ "$1" == "-c" ]
+	then
+		WRAPPER_INCLIB="N"
+	fi
+	shift
+done
+if [ "$WRAPPER_INCLIB" == "Y" ]
+then
+	WRAPPER_OPTIONS="$WRAPPER_OPTIONS -nodefaultlibs $WRAPPER_LIBDIR -luClibc++ $WRAPPER_LIBS"
+fi
+
+exec /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28//bin/arm-hisi-linux-g++ -fno-builtin -nostdinc++ -DGCC_HASCLASSVISIBILITY  $WRAPPER_INCLUDEDIR $WRAPPER_OPTIONS

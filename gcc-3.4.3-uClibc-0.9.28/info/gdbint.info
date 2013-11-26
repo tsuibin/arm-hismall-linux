@@ -1,0 +1,76 @@
+This is gdbint.info, produced by makeinfo version 4.9 from
+../../../binutils-complete/gdb/doc/gdbint.texinfo.
+
+INFO-DIR-SECTION Software development
+START-INFO-DIR-ENTRY
+* Gdb-Internals: (gdbint).	The GNU debugger's internals.
+END-INFO-DIR-ENTRY
+
+   This file documents the internals of the GNU debugger GDB.
+Copyright 1990, 1991, 1992, 1993, 1994, 1996, 1998, 1999, 2000, 2001,
+2002, 2003, 2004, 2005    Free Software Foundation, Inc.  Contributed
+by Cygnus Solutions.  Written by John Gilmore.  Second Edition by Stan
+Shebs.
+
+   Permission is granted to copy, distribute and/or modify this document
+under the terms of the GNU Free Documentation License, Version 1.1 or
+any later version published by the Free Software Foundation; with no
+Invariant Sections, with no Front-Cover Texts, and with no Back-Cover
+Texts.  A copy of the license is included in the section entitled "GNU
+Free Documentation License".
+
+
+Indirect:
+gdbint.info-1: 911
+gdbint.info-2: 265234
+
+Tag Table:
+(Indirect)
+Node: Top911
+Node: Requirements1718
+Node: Overall Structure3206
+Node: Algorithms6493
+Node: User Interface27072
+Ref: User Interface-Footnote-150849
+Ref: User Interface-Footnote-250898
+Node: libgdb51133
+Node: Symbol Handling55092
+Node: Language Support69393
+Node: Host Definition74794
+Node: Target Architecture Definition82151
+Ref: BREAKPOINT_FROM_PC108357
+Ref: DEPRECATED_EXTRACT_STRUCT_VALUE_ADDRESS114553
+Ref: frame_align115385
+Ref: DEPRECATED_FRAME_SAVED_PC117764
+Ref: unwind_pc117950
+Ref: unwind_sp118503
+Ref: stabs_argument_has_addr130966
+Ref: push_dummy_call131740
+Ref: push_dummy_code132326
+Ref: DEPRECATED_REG_STRUCT_HAS_ADDR133171
+Ref: SAVE_DUMMY_FRAME_TOS133405
+Ref: gdbarch_return_value134024
+Ref: DEPRECATED_STACK_ALIGN137309
+Ref: TARGET_WRITE_PC139936
+Ref: TARGET_READ_SP139970
+Ref: unwind_dummy_id141643
+Ref: Target Architecture Definition-Footnote-1150196
+Ref: Target Architecture Definition-Footnote-2150439
+Node: Target Vector Definition150558
+Node: Native Debugging153183
+Node: Support Libraries163621
+Node: Coding168445
+Node: Porting GDB193771
+Node: Versions and Branches195680
+Ref: Tags201625
+Ref: experimental branch tags201956
+Node: Releasing GDB202688
+Node: Testsuite221757
+Node: Hints228603
+Node: Getting Started228925
+Node: Debugging GDB233068
+Node: GDB Observers238430
+Node: GNU Free Documentation License242795
+Node: Index265234
+
+End Tag Table

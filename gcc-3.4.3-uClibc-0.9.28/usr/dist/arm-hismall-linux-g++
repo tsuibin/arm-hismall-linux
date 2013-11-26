@@ -1,0 +1,4 @@
+#!/bin/sh
+
+distcc /opt/hisi-linux/x86-arm/gcc-3.4.3-uClibc-0.9.28/bin/arm-hisi-linux-g++ "$@"
+
